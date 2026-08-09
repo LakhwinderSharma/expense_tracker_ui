@@ -1,0 +1,51 @@
+#income-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  gap: 2%;
+}
+
+#add-income {
+  padding: 1%;
+  width: 30vw;
+  height: 100vh;
+}
+
+#no-record {
+  text-align: center;
+  font-size: large;
+}
+
+#income-history {
+  width: 50vw;
+  height: 100vh;
+  text-align: left;
+  padding: 1%;
+}
+#income-header {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: x-large;
+  background-color: #e2e3e5;
+}
+.table-container {
+  /* Optional: Set a max-width for the entire table container if needed */
+  max-width: 100%;
+  overflow-x: auto; /* For horizontal scrolling if content overflows */
+}
+
+.scrollable-tbody {
+  display: block; /* Important for enabling overflow-y on tbody */
+  max-height: 80vh; /* Set your desired fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.scrollable-tbody tr {
+  display: table; /* Ensure rows maintain table layout within the block-level tbody */
+  width: 100%; /* Ensure rows take full width */
+  table-layout: fixed; /* Optional: Fix column widths */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s ease;
+}

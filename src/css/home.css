@@ -1,0 +1,12 @@
+#grid-container {
+  background-color: ghostwhite;
+  display: grid;
+  grid-template-columns: 1fr 5fr; /* Sidebar takes 1 fraction, main content 3 */
+  grid-template-areas: "sidebar content";
+  height: 100vh; /* Make the grid container fill the viewport height */
+}
+
+#content-container {
+  padding: 3px;
+  height: 100vh; /* Make the grid container fill the viewport height */
+}
